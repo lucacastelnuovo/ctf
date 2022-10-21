@@ -1,0 +1,11 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/71
+
+Victor reloaded
+
+1. Google poem and translation
+2. https://www.lieder.net/lieder/get_text.html?TextId=8563
+3. There are differences between challenge poem and linked poem, https://www.diffchecker.com/fKSBHpMS (select by character)
+4. Add characters toghether and get the flag
+
+flagarenice
