@@ -1,0 +1,11 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/18
+
+Look inside the house
+
+1. exiftool 3e634b3b5d0658c903fc8d42b033fa57.jpg
+
+2. steghide info 3e634b3b5d0658c903fc8d42b033fa57.jpg
+3. steghide extract -sf 3e634b3b5d0658c903fc8d42b033fa57.jpg
+
+4. cat flag.txt
