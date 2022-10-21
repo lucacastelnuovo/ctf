@@ -1,0 +1,11 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/122
+
+Brainsick
+
+1. binwalk -e 5411333e505440020a1799da6071851b.gif
+2. ls _5411333e505440020a1799da6071851b.gif.extracted/
+3. Open _5411333e505440020a1799da6071851b.gif.extracted/131DD.rar
+4. View flag.gif
+
+FLAG-Th2K4s83uQh9xA
