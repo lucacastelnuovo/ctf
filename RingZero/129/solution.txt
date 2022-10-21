@@ -1,0 +1,14 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/129
+
+Brainsick
+
+1. binwalk b730986ccddd83b5f6fb66d2ec362475.jpeg
+2. exiftool b730986ccddd83b5f6fb66d2ec362475.jpeg
+Both show nothing weirds.
+
+Open image in editor.
+3. Move sliders (see https://github.com/Luca-Castelnuovo/ctf/blob/main/RingZero/129/edit.jpg)
+4. Scan QR
+
+flag-517qBd4tesUTUomYdz7W
