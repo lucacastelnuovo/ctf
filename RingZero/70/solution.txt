@@ -1,0 +1,21 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/70
+
+1. Download poem to poem.txt
+
+2. looking at the first character of each line you can see that it spells out FLAG
+    Fort heureux l'homme qui trouvera
+    La vérité au travère des noires
+    Abysses d'une âme tourmenter par la
+    Galère d'un amour improbable.
+
+3. grep -o '^.' poem.txt | tr -d '\n'
+    grep (find matches)
+        -o : Print  only  the  matched  (non-empty)  parts of a matching line
+        '^.' : match the beginning of a line with any character (https://regex101.com/r/vJvnwy/1)
+
+    tr (translate output)
+        -d : delete characters
+        '\n' : new line
+
+4. FLAGCMPHDDSQNUCCPNNSOQACJOOP

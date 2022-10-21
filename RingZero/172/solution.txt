@@ -1,0 +1,7 @@
+# User : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/172
+
+1. Edit image to be straight
+2. Upload image to: http://laighside.com/punchcard.htm
+3. Set settings
+4. Read output: FLAG-DB-INDEX:3801,VAL:FLAG-B493801CDB-831ABDDFA628AC31

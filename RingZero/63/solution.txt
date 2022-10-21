@@ -1,0 +1,11 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/63
+
+Challenge:
+I think that's the key "fselkladfklklakl"
+KDERE2UNX1W1H96GYQNUSQT1KPGB
+
+Solution:
+1. https://www.dcode.fr/vigenere-cipher
+2. Enter key
+3. FLAGU2JNU1R1X96VOFNKHLB1GEWQ

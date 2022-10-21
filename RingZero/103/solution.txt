@@ -1,0 +1,10 @@
+flag format: cityfirstnamelastname
+
+1. Read exif data DR_Pouce.jpg
+2. Enter location in: https://gps-coordinates.org/ -> 5184 Sackville St, Halifax NS B3J 3N1, Canada
+	halifax
+
+3. Read exif data DR_Pouce.pdf
+4. Author: Steve Finger
+
+FLAG: halifaxstevefinger

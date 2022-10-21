@@ -1,0 +1,13 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/118
+
+1. It is a quite big image 3,4mb
+
+2. binwalk -e d4c7104f4628d5d1248b82caf3546deb.jpg shows nothing special
+    DECIMAL       HEXADECIMAL     DESCRIPTION
+    --------------------------------------------------------------------------------
+    0             0x0             JPEG image data, JFIF standard 1.01
+
+3. Continue inspecting the image
+4. If you look at the height of the red mark on the right side of the image you will see a very small text containing the flag
+5. flaghsdf83ksk22

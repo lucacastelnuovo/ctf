@@ -1,0 +1,9 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/252
+
+ssh cat@challenges.ringzer0team.com -p 10252
+pass: cat
+
+1. ssh into server
+
+Maybe write to a file using cat: https://www.baeldung.com/linux/cat-writing-file

@@ -1,0 +1,6 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/20
+
+strings 86b265d37d1fc10b721a2accae04a60d | grep -i flag
+
+FLAG-ggmgk05096

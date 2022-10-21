@@ -1,0 +1,31 @@
+# User : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/297
+
+https://web.archive.org/web/20200812121841/https://www.itgovernance.co.uk/blog/the-25-most-common-stolen-passwords-of-2015
+
+Worst 25 passwords of 2015
+123456
+password
+12345678
+qwerty
+12345
+123456789
+football
+1234
+1234567
+baseball
+welcome
+1234567890
+abc123
+111111
+1qaz2wsx
+dragon
+master
+monkey
+letmein
+login
+princess
+qwertyuiop
+solo
+passw0rd
+starwars

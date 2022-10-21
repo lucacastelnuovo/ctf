@@ -1,0 +1,19 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/43
+
+1. Inspect response headers
+    HTTP/1.1 200 OK
+    Date: Sun, 16 Oct 2022 12:27:03 GMT
+    Server: Apache/2.4.41 (Ubuntu)
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Flag: FLAG-365m4fU5p2DVEQbfrptDE5Ru
+    Vary: Accept-Encoding
+    Content-Encoding: gzip
+    Content-Length: 15676
+    Content-Type: text/html; charset=UTF-8
+    Keep-Alive: timeout=5, max=100
+    Connection: Keep-Alive
+
+2. FLAG-365m4fU5p2DVEQbfrptDE5Ru

@@ -1,0 +1,10 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/149
+
+ssh oracle@challenges.ringzer0team.com -p 10089 -i private.pem
+
+1. ssh into server
+2. cat .profile (here you find command "reveal")
+3. excute "reveal"
+
+FLAG-d325e738fa7d87d4f5607c302b37db20

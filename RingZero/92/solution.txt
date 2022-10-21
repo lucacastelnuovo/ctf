@@ -1,0 +1,10 @@
+file 0b02119984a7cee0ba83d55425b9491f.E01
+	0b02119984a7cee0ba83d55425b9491f.E01: EWF/Expert Witness/EnCase image file format
+
+mkdir mount && ewfmount 0b02119984a7cee0ba83d55425b9491f.E01 mount/
+
+strings mount/* | grep -i flag
+
+umount mnt/
+
+flag-6b96e212b3f85968db654f7892f06122

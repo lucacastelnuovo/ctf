@@ -1,0 +1,4 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/173
+
+1337 FORMAT(11HFLAG-DFEB0D,I4,1H-,I3,10HFDBECDF3 D,I3) 1337005

@@ -1,0 +1,4 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/49
+
+openssl rsautl -decrypt -in flag.enc  -out flag.txt -inkey private.pem

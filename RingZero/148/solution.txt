@@ -1,0 +1,15 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/148
+# Objective: Find architect password
+
+ssh morpheus@challenges.ringzer0team.com -p 10148
+pass: VNZDDLq2x9qXCzVdABbR1HOtz
+
+1. ssh into server
+2. grep -r "architect" / 2>/dev/null
+```
+/etc/fstab:#//TheMAtrix/phone  /media/Matrix  cifs  username=architect,password=$(base64 -d "RkxBRy0yMzJmOTliNDE3OGJkYzdmZWY3ZWIxZjBmNzg4MzFmOQ=="),iocharset=utf8,sec=ntlm  0  0
+```
+3. echo "RkxBRy0yMzJmOTliNDE3OGJkYzdmZWY3ZWIxZjBmNzg4MzFmOQ==" | base64 -d
+
+FLAG-232f99b4178bdc7fef7eb1f0f78831f9

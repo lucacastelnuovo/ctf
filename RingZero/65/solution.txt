@@ -1,0 +1,7 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/65
+
+strings .me.swp | grep -i flag
+
+Flag-1s4g76jk89f
+

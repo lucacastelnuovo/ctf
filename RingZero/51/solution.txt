@@ -1,0 +1,16 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/51
+
+I Lost my password can you find it?
+
+Start challenge
+1. Download https://ringzer0ctf.com/files/329d7767b42f3d8e9f498e98fbabc83c.zip
+2. unzip 329d7767b42f3d8e9f498e98fbabc83c.zip
+
+Search for the cpassword in the files
+2. find ./Policies -type f -exec grep -H 'cpassword' {} \;
+3. cat ./Policies/{75DE8F0A-DEC0-441F-AE29-90DFAFCF632B}/User/Preferences/Groups/Groups.xml | grep -i cpassword
+
+Decrypt password
+4. gpp-decrypt "PCXrmCkYWyRRx3bf+zqEydW9/trbFToMDx6fAvmeCDw"
+5. LocalRoot!

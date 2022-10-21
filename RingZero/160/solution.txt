@@ -1,0 +1,9 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/160
+# Objective: I'm looking for information about me! The website...
+
+If you want to verify domain ownership you usually do that by uploading a file or setting a dns record.
+I suspect that the flag is in a TXT dns records, so I tried to get the flag with dig command:
+
+1. dig -t txt ringzer0team.com +short | grep -i flag
+"FLAG-305l9RR202HG695t6Y8ZU77xyq"

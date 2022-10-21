@@ -1,0 +1,13 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/89
+
+ssh morpheus@challenges.ringzer0team.com -p 10089
+pass: VNZDDLq2x9qXCzVdABbR1HOtz
+
+1. ssh into server
+2. grep -r "trinity" / 2>/dev/null
+```
+/etc/rc.local:/bin/sh /root/backup.sh -u trinity -p Flag-7e0cfcf090a2fe53c97ea3edd3883d0d &
+```
+
+Flag-7e0cfcf090a2fe53c97ea3edd3883d0d
