@@ -32,10 +32,9 @@ def submit_result(result):
 def lookup_table(hash):
     with open("table.txt", "r") as f:
         line = next((l for l in f if hash in l), None)
-        password = line.split(" - ")[0].strip()
 
-        if password:
-            print(password)
+        if line:
+            print(line[-6 - 1 :])
             exit()
 
 
