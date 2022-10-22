@@ -1,7 +1,7 @@
 # User     : ltcastelnuovo
 # Challenge: https://ringzer0ctf.com/challenges/22
 
-Look inside the house
+A ghost sound
 
 1. sudo apt install sonic-visualiser -y
 2. sonic-visualiser 15d087d9cc86e82b87d0e5ce2cef8583.wav
