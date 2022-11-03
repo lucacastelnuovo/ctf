@@ -1,0 +1,24 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/80
+
+ssh level1@challenges.ringzer0team.com -p 10080
+pass: level1
+
+1. ssh into server
+
+Challenges are in /levels
+Flags are the next user's pwd in /home/[user]/.pass
+
+2. cat readme
+Welcome to ringzer0team.com binary sandbox!
+
+For help, come see us on IRC (irc.smashthestack.org #ringzer0team)
+
+Some things you must know:
+  - Levels are in /levels
+  - Home folders are readable only. Create a folder in /tmp to build your exploits.
+  - You can scp files on this box but can't reach internet from it.
+  - Levels passwords are in ~/.pass. Your goal is to reach it to levelup!
+  - Submit your flags on the website!
+
+Enjoy!
